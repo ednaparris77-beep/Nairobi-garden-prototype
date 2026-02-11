@@ -15,7 +15,7 @@ body {
 .hero {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                    url('hero.jpeg');
+                    url("hero.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,5 +195,6 @@ footer {
   padding: 2rem;
 
 }
+
 
 
