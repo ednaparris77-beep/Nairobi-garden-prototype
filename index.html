@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nairobi Garden Restaurant – All-Day Dining Prototype | Nairobi</title>
+  <meta name="description" content="A prototype for a fresh, vibrant all-day dining garden restaurant in Nairobi.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Nairobi Garden Restaurant</h1>
+      <p>All-Day Dining • Fresh Flavors • Garden Vibes in Nairobi</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>Welcome to Nairobi Garden</h2>
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1200" alt="Serene garden seating" class="section-image">
+    <p>A relaxing all-day dining spot inspired by Nairobi's lush garden settings. Open daily for breakfast, lunch, dinner, and cozy moments with fresh Kenyan and international dishes in a green, serene atmosphere.</p>
+    <!-- No map/location embed – generalized for prototype/demo -->
+  </section>
+
+  <!-- Menu Teaser -->
+  <section id="menu" class="section menu-teaser">
+    <h2>Menu Highlights</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=80&w=800" alt="Full Breakfast">
+        <h3>Full Breakfast</h3>
+        <p>Eggs, sausages, fresh juices & more</p>
+        <span>KES 1,200</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80&w=800" alt="Burger & Fries">
+        <h3>Classic Burger & Fries</h3>
+        <p>Juicy beef patty, fresh toppings, crispy fries</p>
+        <span>KES 1,500</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800" alt="Dessert Platter">
+        <h3>Dessert Platter</h3>
+        <p>Assorted cakes, pastries & ice cream</p>
+        <span>KES 1,800</span>
+      </div>
+    </div>
+    <a href="#" class="btn">View Full Menu (Coming Soon)</a>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&q=80&w=800" alt="Garden seating">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800" alt="Outdoor dining">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Cozy garden vibe">
+      <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80&w=800" alt="Delicious mains">
+    </div>
+  </section>
+
+  <!-- Reservations -->
+  <section id="reservations" class="section contact">
+    <h2>Make a Reservation</h2>
+    <p>Contact us via phone or WhatsApp (placeholder for demo).</p>
+    
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+
+      <!-- Date selection: Day first → Month → Year -->
+      <div class="date-group">
+        <label>Date (DD/MM/YYYY):</label>
+        <div class="date-selects">
+          <!-- Day first -->
+          <select name="day" id="day" required>
+            <option value="">Day</option>
+            <!-- Populated by JS -->
+          </select>
+
+          <select name="month" id="month" required>
+            <option value="">Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+
+          <select name="year" id="year" required>
+            <option value="">Year</option>
+            <!-- Populated by JS -->
+          </select>
+        </div>
+      </div>
+
+      <!-- Hidden field for combined date in YYYY-MM-DD format -->
+      <input type="hidden" name="date" id="full-date">
+
+      <div class="time-group">
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required step="900">
+      </div>
+
+      <input type="number" name="guests" placeholder="Number of Guests" min="1" max="20" required>
+      <textarea placeholder="Message / Special Requests (e.g., outdoor table, birthday, allergies)"></textarea>
+      <button type="submit" class="btn">Send Reservation Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Nairobi Garden Restaurant Prototype (Demo / Portfolio Project)</p>
+    <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+      This is a personal web development prototype inspired by Nairobi garden dining vibes. Not affiliated with any real business.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
