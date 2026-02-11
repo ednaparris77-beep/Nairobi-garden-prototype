@@ -15,7 +15,7 @@ body {
 .hero {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                    url('../../Downloads/WhatsApp Image 2026-02-11 at 22.14.47.jpeg');
+                    url('hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -193,4 +193,5 @@ footer {
   color: white;
   text-align: center;
   padding: 2rem;
+
 }
